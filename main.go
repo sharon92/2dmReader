@@ -41,7 +41,8 @@ type Nodes struct {
 func main() {
 	start := time.Now()
 	// path := "C:/Projects/test/hydro_as-2d.2dm"
-	path := "C:/Projects/starkregen/hydro_as-2d.2dm"
+	// path := "C:/Projects/starkregen/hydro_as-2d.2dm"
+	path := os.Args[1]
 	file, _ := os.Open(path)
 	defer file.Close()
 
